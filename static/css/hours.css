@@ -1,0 +1,72 @@
+.dna-template {
+    display: none;
+}
+
+table.hours {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", verdana, arial, sans-serif;
+	font-size:12px;
+	border-width: 1px;
+	border-color: #999999;
+	border-collapse: collapse;
+}
+table.hours th {
+	background-color:#484D52;
+    color: #FFFFFF;
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+table.hours tr {
+	background-color:#F5F5F5;
+}
+table.hours td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #8B9899;
+}
+
+table.hours td.date {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+}
+
+table.hours tr.billable {
+    background-color: #D1F0D8;
+}
+
+table.hours tr.chat {
+    background-color: #B7DDC0;
+}
+table.hours tr.jira {
+    background-color: #D7FAEC;
+}
+#date-container {
+    position: fixed;
+    top: 0;
+    left: 75%;
+    border: 2px solid black;
+    background-color: white;
+    padding: 4px;
+}
+#date-select-container {
+    display: none;
+}
+.hour_passed {
+    border-top-style: groove;
+}
+.hide {
+    display: none;
+}
+tr.hidden {
+    border-top-style: dashed;
+}
+
+tr.hidden td {
+    display: none;
+}
+tr.bill-time td:first-child {
+    background-color: #aa3311;
+    color: white;
+}

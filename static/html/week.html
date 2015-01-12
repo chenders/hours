@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script type="text/javascript" src="../js/jquery-2.1.3.min.js"></script>
+        <link rel="stylesheet" href="../css/hours.css" type="text/css"/>
+        <script type="text/javascript" src="../js/hours.js"></script>
+        <script type="text/javascript">
+            document.writeln('<scri' + 'pt type="text/javascript" src="../../out/' + getURLP('date') + '.js"></scri' + 'pt>');
+        </script>
+    </head>
+<body>
+    <div id="date-container">
+        <span id="current-date"></span>
+        <div id="date-select-container" style="display: none;">
+            <select id="date-select">
+                <option name="{0}" class="date-option">{0}</option>
+            </select>
+        </div>
+    </div>
+    <table width="100%" class="hours" id="entries-container">
+        <tr class="date-header">
+            <th colspan="3" align="center">
+                <a id="{0}" title="{0}"></a>
+                <b>{0}</b>
+            </th>
+        </tr>
+        <tr class="entry-item {0}">
+            <td nowrap="true" title="{1}" class="date">
+                {1}
+            </td>
+            <td title="{2}">
+                {3}
+            </td>
+            <td>
+                {4}
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
