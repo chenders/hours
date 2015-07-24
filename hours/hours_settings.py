@@ -18,7 +18,7 @@ HIDDEN_KEYWORDS = {
 }
 
 BILLABLE_KEYWORDS = {
-    'url': [],
+    'url': ['python'],
     'title': []
 }
 VERBOSE = True
@@ -27,7 +27,7 @@ HOURS_DATASOURCES = [
     'sources.chrome',
 ]
 
-CHAT_INCLUDE = []
+CHAT_INCLUDE = ['myworkbudz']
 
 HOURS_TZ = 'America/New_York'
 
@@ -35,8 +35,10 @@ platform_name = platform.system()
 DS = {}
 
 DS['CHROME'] = {}
+DS['ADIUM'] = {}
 if platform_name == 'Darwin':
     DS['CHROME']['HISTORY'] = expanduser('~/Library/Application Support/Google/Chrome/Default/History')
+    DS['ADIUM']['LOGS'] = expanduser('~/Library/Application Support/Adium 2.0/Users/Default/Logs')
 elif platform_name == 'Windows':
     DS['CHROME']['HISTORY'] = expanduser('~/Local Settings/Application Data/Google/Chrome/User Data/Default/History')
 elif platform_name == 'Linux':

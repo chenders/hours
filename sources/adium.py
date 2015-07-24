@@ -19,7 +19,7 @@ class DataSource(HoursDataSource):
         md_query = 'kMDItemFSCreationDate > $time.iso(%s)' % self.start_date.strftime('%Y-%m-%d')
         mdfind_command = ['mdfind',
                           '-onlyin',
-                          settings.ADIUM_LOG_DIR,
+                          settings.DS['ADIUM']['LOGS'],
                           md_query]
         chatlogs = subprocess.check_output(mdfind_command).split('\n')
         # Filename will be in the form of:
